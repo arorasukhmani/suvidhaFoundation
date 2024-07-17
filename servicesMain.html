@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Main</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F0F4F8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        h1 {
+            color: #C84869;
+            margin-bottom: 20px;
+            position: relative;
+            animation: slideIn 1s ease-out;
+        }
+
+        .services-section {
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in;
+        }
+
+        .service {
+            margin: 20px 0;
+        }
+
+        .service h2 {
+            color: #C84869;
+        }
+
+        .service p {
+            color: #555;
+        }
+
+        .services-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .services-list div {
+            background-color: #F7D8DF;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .services-list div:hover {
+            transform: scale(1.05);
+            background-color: #E6A9B4;
+        }
+
+        .services-list h3 {
+            color: #C84869;
+        }
+
+        .services-list p {
+            color: #666;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            animation: slideIn 1s ease-out;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            opacity: 0.8;
+        }
+
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .image-container:hover .image-overlay {
+            opacity: 1;
+        }
+
+        .shape-circle {
+            width: 150px;
+            height: 150px;
+            background-color: #C84869;
+            border-radius: 50%;
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            z-index: -1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .shape-square {
+            width: 100px;
+            height: 100px;
+            background-color: #C84869;
+            position: absolute;
+            bottom: -50px;
+            left: -50px;
+            z-index: -1;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .cta-button {
+            background-color: #C84869;
+            color: #FFFFFF;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #A63152;
+            transform: scale(1.1);
+        }
+
+        .why-phd {
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            animation: bounceIn 1s ease-out;
+        }
+
+        .why-phd h2 {
+            font-family: 'Georgia', serif;
+            color: #C84869;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .why-phd p {
+            font-family: 'Verdana', sans-serif;
+            color: #444;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.05);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: translateX(-50%) rotate(0deg);
+            }
+            100% {
+                transform: translateX(-50%) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-info">
+        <p>Have any questions? +91-9176966446 | <a href="mailto:info@phdassistance.com">info@phdassistance.com</a></p>
+    </div>
+      <header>
+        <div class="container">
+          <img src="logo.png" alt="Company Logo">
+          <nav>
+            <ul>
+              <li><a href="aboutUs.html">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Industries</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="helpGuide.html">Help Guide</a></li>
+              <li><a href="contactUs.html">Contact Us</a></li>
+              <li><a href="hiring.html">Hire a Research Assistant</a></li>
+            </ul>
+          </nav>
+          <div class="search-bar">
+            <form action="#">
+              <input type="text" placeholder="Search">
+              <button type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="shape-circle"></div>
+        <div class="shape-square"></div>
+        <h1>Main Services</h1>
+        <div class="why-phd">
+            <div class="shape-triangle"></div>
+            <h2>Why Ph.D. Assistance?</h2>
+            <p>A Genuine Company with the presence across the World including US, UK & India</p>
+            <p>Our team of writers & Statisticians are guided by high quality QC team from Harvard & Alabama</p>
+            <p>Highest quality work in the industry</p>
+            <p>Registered Company based in Sheffield (U.K), Dallas (U.S) & India</p>
+            <p>We guarantee your work and much care about academic success</p>
+            <p>Our team of researchers and writers care about your success</p>
+        </div>
+        
+        <div class="services-section">
+            <h2>Our Main Services</h2>
+            <div class="services-list">
+                <div>
+                    <h3>Dissertation</h3>
+                    <p>Ph.D. Topic Selection, Problem Identification, Research Proposal, Pilot Study, Ph.D. Dissertation (Full), Ph.D. Dissertation (Part), Ph.D. Consultation, Viva Voce</p>
+                </div>
+                <div>
+                    <h3>Coursework</h3>
+                    <p>Abstract, Assignment, Interim Report, Exam Notes, Synopsis Preparation, Power Point, References Collection, Conceptual Framework, Theoretical Framework, Annotated Bibliography, Theorem Development, Gap Identification</p>
+                </div>
+                <div>
+                    <h3>Research Methodology</h3>
+                    <p>Research Design, Sampling, Sample Size, Power Calculation, Qualitative Methodology, Quantitative Methodology, Primary Data Collection, Secondary Data Collection</p>
+                </div>
+                <div>
+                    <h3>Analytics</h3>
+                    <p>Quantitative Statistics, Textual / Content Analysis, Biostatistics, Econometrics, Big Data Analytics, Software Programming, Computer Programming</p>
+                </div>
+                <div>
+                    <h3>Manuscript</h3>
+                    <p>Manuscript Rewriting, Manuscript Copyediting, Manuscript Peer Reviewing, Manuscript Statistics, Manuscript Formatting & Referencing, Manuscript Plagiarism Correction, Manuscript Editorial Comment Help, Conference & Seminar Paper</p>
+                </div>
+                <div>
+                    <h3>Editing</h3>
+                    <p>Copyediting, Translation, Transcription, Plagiarism Correction, Formatting & Referencing, Redrawing</p>
+                </div>
+                <div>
+                    <h3>Animation</h3>
+                    <p>Animation Services</p>
+                </div>
+                <div>
+                    <h3>Courses</h3>
+                    <p>Writing for a Journal, Academic Statistics, Journal Manuscript Writing, Research Methodology, Research Proposal Writing, Academic Presentations, PhD – Thesis Writing, How to Write the Best PhD</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>Phd assistance</h3>
+            <p>Ph.D. Assistance mentors researchers, transforming ideas into research models. We offer expert services in idea development, editing, proofreading, plagiarism correction, statistical analysis, coding, and formatting, ensuring high academic standards for non-native English speakers.</p>
+            <p><strong>Email:</strong> info@phdassistance.com</p>
+            <p><strong>Phone:</strong> +91-9176966446</p>
+            <p><strong>Customer Care: +91-9384672299</strong> </p>
+          </div>
+          <div class="subscription-form">
+            <h2>Get Monthly Updates</h2>
+            <p>Enter your email here <span>*</span></p>
+            <form id="email-form">
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Sign Up!</button>
+            </form>
+            <p id="thank-you-message" style="display: none;">Thanks for submitting!</p>
+        </div>
+          <div class="footer-column quick-links">
+            <h3>Quick Links</h3>
+            <a href="#">About</a><br>
+            <a href="#">Support Us</a><br>
+            <a href="#">News</a><br>
+            <a href="#">Events</a><br>
+            <a href="#">Podcast</a><br>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2024 PhDassistance. </span>
+          <a href="https://www.phdassistance.com/">Site</a>
+          <span>|</span>
+          <a href="#">Terms of Use</a>
+          <span>|</span>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </footer>
+      <script>
+        document.querySelector('.toggle-menu').addEventListener('click', () => {
+          document.querySelector('nav ul').classList.toggle('active');
+        });
+      </script>
+
+<script src="script.js"></script> 
+</body>
+</html>
