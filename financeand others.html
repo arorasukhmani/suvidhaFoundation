@@ -3,11 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhD Assistance</title>
+    <title>Animated Cards Section</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
+    <style>
+    .cards-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding-top: 200px;
+      padding-bottom: 100px;
+  }
+  
+  .card {
+      background:  #2A70DE;
+      color: white;
+      width: 300px;
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .card h3 {
+      margin: 10px 0 10px 0;
+      padding: 0;
+      font-size: 1.2em;
+      text-align: center;
+  }
+  
+  .card p {
+      margin: 10px 0 0 0;
+      padding: 0;
+      font-size: 0.9em;
+      text-align: center;
+  }
+  
+  .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card i {
+      font-size: 3em;
+      margin-bottom: 10px;
+  }
+</style>
 </head>
 <body>
     <div class="contact-info">
@@ -31,15 +80,15 @@
                   <a href="copyEditingServices.html">Editing Services</a>
                   <a href="literatureReview.html">Literature Review</a>
                   <a href="manuscript.html">Manuscript</a>
-                  <a href="courses.html">Courses</a>
+                  <a href="#">Courses</a>
                 </div>
               </li>
               <!-- <li><a href="#">Industries<i class='bx bx-chevron-down'></i></a></li> -->
               <li class="dropdown">
-                <a href="industries.html">Industries<i class='bx bx-chevron-down'></i></a>
+                <a href="#">Industries<i class='bx bx-chevron-down'></i></a>
                 <div class="dropdown-content">
-                  <a href="academicLawWriting.html">Academic Law Writing</a>
-                  <a href="artsHumanities.html">Arts & Humanities</a>
+                  <a href="#">Academic Law Writing</a>
+                  <a href="#">Arts & Humanities</a>
                   <a href="#">Medicine & Healthcare</a>
                   <a href="#">Business & Management</a>
                   <a href="#">Economics & Finance Academic</a>
@@ -52,7 +101,6 @@
               <li><a href="helpGuide.html">Help-Guide</a></li>
               <li><a href="contactUs.html">Contact Us</a></li>
               <li><a href="hiring.html">Hire a Research Assistant</a></li>
-              <li><a href="faq.html">FAQ</a></li>
             </ul>
           </nav>
           <div class="search-bar">
@@ -63,7 +111,50 @@
           </div>
         </div>
     </header>
-    
+
+    <section class="cards-section">
+      <div class="card">
+          <i class='bx bxs-dollar-circle'></i>
+          <h3>ACCOUNTING & FINANCE</h3>
+          <p>An overview of the accounting and finance program structure offers a thorough preparation for academic research in finance/accounting.</p>
+      </div>
+      <div class="card">
+          <i class='bx bxs-bullseye'></i>
+          <h3>MARKETING</h3>
+          <p>When any scholars are looking to progress undergraduate studies in marketing, those would like to take their career to the next step towards to put a solid basis in a marketing career.</p>
+      </div>
+      <div class="card">
+        <i class='bx bxs-home'></i>
+          <h3>TOURISM & HOSPITALITY</h3>
+          <p>The tourism and hospitality industries are the world’s booming industries and a massive amount of professionals working in this field.</p>
+      </div>
+      <div class="card">
+        <i class='bx bx-font-family'></i>
+          <h3>ENGLISH</h3>
+          <p>The program deals with internationally recognized research topics and modules particularly cover all the subjects of English language and literature.</p>
+      </div>
+      <div class="card">
+        <i class='bx bx-globe'></i>
+          <h3>HISTORY</h3>
+          <p>The program offered for students to get excellence in various ranges of topics in history and also designed to understand the foundation of historical phenomena comprehensively.</p>
+      </div>
+      <div class="card">
+        <i class='bx bx-history' ></i>
+          <h3>CLASSICS & ANCIENT HISTORY</h3>
+          <p>Master your dissertations, combining historical expertise with the culmination of your research journey.</p>
+      </div>
+      <div class="card">
+        <i class='bx bxs-book-bookmark'></i>
+          <h3>LAW</h3>
+          <p>The law program is designed for the individual who is interested in studying the variety of legal systems and backgrounds.</p>
+      </div>
+      <div class="card">
+        <i class='bx bx-search-alt'></i>
+          <h3>OPERATIONAL RESEARCH</h3>
+          <p>This program deals comprehensively with the concentration in Management Science and the program of operational research.</p>
+      </div>
+  </section>
+
     <footer class="footer">
         <div class="footer-container">
           <div class="footer-column">

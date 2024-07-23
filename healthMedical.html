@@ -3,11 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhD Assistance</title>
+    <title>Health and Medical</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .cards-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding-top: 200px;
+            padding-bottom: 100px;
+        }
+
+        .card {
+            background: #2A70DE;
+            color: white;
+            width: 300px;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .card h3 {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-size: 1.5em;
+        }
+
+        .card p {
+            margin: 10px 0 0 0;
+            padding: 0;
+            font-size: 1em;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
     <div class="contact-info">
@@ -31,15 +77,15 @@
                   <a href="copyEditingServices.html">Editing Services</a>
                   <a href="literatureReview.html">Literature Review</a>
                   <a href="manuscript.html">Manuscript</a>
-                  <a href="courses.html">Courses</a>
+                  <a href="#">Courses</a>
                 </div>
               </li>
               <!-- <li><a href="#">Industries<i class='bx bx-chevron-down'></i></a></li> -->
               <li class="dropdown">
-                <a href="industries.html">Industries<i class='bx bx-chevron-down'></i></a>
+                <a href="#">Industries<i class='bx bx-chevron-down'></i></a>
                 <div class="dropdown-content">
-                  <a href="academicLawWriting.html">Academic Law Writing</a>
-                  <a href="artsHumanities.html">Arts & Humanities</a>
+                  <a href="#">Academic Law Writing</a>
+                  <a href="#">Arts & Humanities</a>
                   <a href="#">Medicine & Healthcare</a>
                   <a href="#">Business & Management</a>
                   <a href="#">Economics & Finance Academic</a>
@@ -52,7 +98,6 @@
               <li><a href="helpGuide.html">Help-Guide</a></li>
               <li><a href="contactUs.html">Contact Us</a></li>
               <li><a href="hiring.html">Hire a Research Assistant</a></li>
-              <li><a href="faq.html">FAQ</a></li>
             </ul>
           </nav>
           <div class="search-bar">
@@ -63,7 +108,45 @@
           </div>
         </div>
     </header>
-    
+
+    <section class="cards-section">
+        <div class="card">
+            <h1><i class='bx bxs-clinic'></i></h1>
+            <h3>NURSING</h3>
+            <p>Nursing program prepares you to achieve the career goal as an independent researcher on the nursing care to protect vulnerable communities.</p>
+        </div>
+        <div class="card">
+            <h1><i class='bx bx-briefcase' ></i></h1>
+            <h3>CLINICAL PHARMOCOLOGY</h3>
+            <p>Clinical pharmacology program is an integrated science both basic and clinical, will enable to gain the skills and knowledge to examine.</p>
+        </div>
+        <div class="card">
+            <h1><i class='bx bx-plus-medical' ></i></h1>
+            <h3>PUBLIC HEALTH</h3>
+            <p>Students are pursuing public health gain skills and knowledge in the public health discipline such as epidemiology, health policy & management.</p>
+        </div>
+        <div class="card">
+            <h1><i class='bx bx-test-tube' ></i></h1>
+            <h3>FOOD SCIENCE & NUTRITION</h3>
+            <p>The food science and nutrition program is designed for individuals who are a desire to pursue a graduate degree in related science.</p>
+        </div>
+        <div class="card">
+            <h1><i class='bx bxs-capsule' ></i></h1>
+            <h3>COMPLIMENTARY & ALTERNATIVE MEDICINE</h3>
+            <p>Complementary and alternative (CAM) medicine course aims to deal with various medical practices and products that implied to be extreme conventional.</p>
+        </div>
+        <div class="card">
+            <h1><i class='bx bx-world' ></i></h1>
+            <h3>PSYCHOLOGY & PSYCHIATRY</h3>
+            <p>Psychology & Psychiatry program explore studies between the mind and its relationship to the human behavior and emotions.</p>
+        </div>
+        <div class="card">
+            <h1><i class='bx bxs-megaphone' ></i></h1>
+            <h3>POLITICS & SOCIOLOGY</h3>
+            <p>Politics & Sociology programs incorporate the perspective of political science and sociology to address critical attributes and fundamental issues.</p>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="footer-container">
           <div class="footer-column">

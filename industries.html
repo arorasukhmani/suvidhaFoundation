@@ -8,6 +8,85 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Optional additional styles */
+        
+        .image-section {
+            text-align: center; /* Center-align content */
+            margin-bottom: 20px; /* Example margin */
+            padding: 0px; /* Padding around the image */
+            background-color: #f0f0f0; /* Example background color */
+        }
+        .image-section img {
+            width: 100%; /* Ensure image covers the width */
+            max-height: 300px; /* Limit maximum height */
+            object-fit: cover; /* Cover the container */
+            border-radius: 0px; /* Example border radius */
+        }
+
+        .boxed-heading {
+            text-align: center; /* Center-align content */
+             /* Example background color */
+            color: #000; /* Example text color */
+            padding: 10px; /* Padding around the heading */
+            margin: 20px auto; /* Example margin */
+            max-width: 600px; /* Maximum width */
+            border-radius: 10px; /* Example border radius */
+        }
+        
+    .cards-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding-top: 32px;
+      padding-bottom: 100px;
+  }
+  
+  .card {
+      background: radial-gradient(circle, #4a90e2, #1c3d8e);
+      color: white;
+      width: 300px;
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .card h3 {
+      margin: 10px 0 10px 0;
+      padding: 0;
+      font-size: 1.2em;
+      text-align: center;
+  }
+  
+  .card p {
+      margin: 10px 0 0 0;
+      padding: 0;
+      font-size: 0.9em;
+      text-align: center;
+  }
+  
+  .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card i {
+      font-size: 3em;
+      margin-bottom: 10px;
+  }
+
+  /* .card i:hover{
+    transform: scale(1.05);
+  } */
+
+</style>
 </head>
 <body>
     <div class="contact-info">
@@ -38,8 +117,8 @@
               <li class="dropdown">
                 <a href="industries.html">Industries<i class='bx bx-chevron-down'></i></a>
                 <div class="dropdown-content">
-                  <a href="academicLawWriting.html">Academic Law Writing</a>
-                  <a href="artsHumanities.html">Arts & Humanities</a>
+                  <a href="#">Academic Law Writing</a>
+                  <a href="#">Arts & Humanities</a>
                   <a href="#">Medicine & Healthcare</a>
                   <a href="#">Business & Management</a>
                   <a href="#">Economics & Finance Academic</a>
@@ -52,7 +131,6 @@
               <li><a href="helpGuide.html">Help-Guide</a></li>
               <li><a href="contactUs.html">Contact Us</a></li>
               <li><a href="hiring.html">Hire a Research Assistant</a></li>
-              <li><a href="faq.html">FAQ</a></li>
             </ul>
           </nav>
           <div class="search-bar">
@@ -63,6 +141,60 @@
           </div>
         </div>
     </header>
+
+    <section>
+        <div class="image-section">
+            <img src="industry.jpg" alt="Industrial Scene">
+        </div>
+    </section>
+
+    <div class="boxed-heading">
+        <h2>INDUSTRIES</h2>
+    </div>
+    <section class="cards-section">
+      <div class="card">
+        <i class='bx bxs-book'></i>
+
+          <h3>ACADEMIC LAW WRITING</h3>
+          <p>Law Dissertion (Thesis),Assignments,Manuscript Writing & Editing Services</p>
+      </div>
+      <div class="card">
+        <i class='bx bxs-briefcase'></i>
+          <h3>Business & MANAGEMENT</h3>
+          <p>Buisness & Management Dissertion (Thesis),Assignemnts,Manuscript Writing & Editing</p>
+      </div>
+      <div class="card">
+        <i class='bx bxs-cog'></i>
+          <h3>ENGINEERING & TECHNOLOGY</h3>
+          <p>Engineering & Technology Assignmnets, Manuscript Writing & Editing Service</p>
+      </div>
+      <div class="card">
+        <i class='bx bxs-paint'></i>
+          <h3>ARTS & HUMANITIES</h3>
+          <p>Arts & Humanities (Thesis), Assignmnets,Manuscript Writing & Editing Services</p>
+      </div>
+      <div class="card">
+        <i class='bx bxs-dollar-circle'></i>
+          <h3>ECONOMICS & FINANCE ACADEMIC</h3>
+          <p>Economics & Finance Dissertion (Thesis), Asiignments, Manuscript Writing & Editing </p>
+      </div>
+      <div class="card">
+        <i class='bx bx-globe'></i>
+          <h3>BIOLOGY & LIFE SCIENCE</h3>
+          <p>Biological &  Life Science (Thesis),Assignments, Manuscript Writing & Editing</p>
+      </div>
+      <div class="card">
+        <i class='bx bxs-heart'></i>
+          <h3>MEDICINE & HEALTHCARE</h3>
+          <p>Medicine & Allied Health Dissertation (Thesis), Assignments, Manuscript Writing</p>
+      </div>
+      <div class="card">
+        <i class='bx bx-code-block'></i>
+          <h3>COMPUTER SCIENCE & INFORMATION</h3>
+          <p> Computer Science & Information Technology (Thesis), Assignments</p>
+      </div>
+      
+  </section>
     
     <footer class="footer">
         <div class="footer-container">
@@ -106,5 +238,7 @@
           document.querySelector('nav ul').classList.toggle('active');
         });
       </script>
+
+<script src="script.js"></script> 
 </body>
 </html>

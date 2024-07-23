@@ -3,11 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhD Assistance</title>
+    <title>Engineering</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
+    <style>
+    .cards-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding-top: 200px;
+      padding-bottom: 100px;
+  }
+  
+  .card {
+      background:#2A70DE;
+      color: white;
+      width: 300px;
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .card h3 {
+      margin: 10px 0 10px 0;
+      padding: 0;
+      font-size: 1.2em;
+      text-align: center;
+  }
+  
+  .card p {
+      margin: 10px 0 0 0;
+      padding: 0;
+      font-size: 0.9em;
+      text-align: center;
+  }
+  
+  .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card i {
+      font-size: 3em;
+      margin-bottom: 10px;
+  }
+</style>
 </head>
 <body>
     <div class="contact-info">
@@ -31,15 +80,15 @@
                   <a href="copyEditingServices.html">Editing Services</a>
                   <a href="literatureReview.html">Literature Review</a>
                   <a href="manuscript.html">Manuscript</a>
-                  <a href="courses.html">Courses</a>
+                  <a href="#">Courses</a>
                 </div>
               </li>
               <!-- <li><a href="#">Industries<i class='bx bx-chevron-down'></i></a></li> -->
               <li class="dropdown">
-                <a href="industries.html">Industries<i class='bx bx-chevron-down'></i></a>
+                <a href="#">Industries<i class='bx bx-chevron-down'></i></a>
                 <div class="dropdown-content">
-                  <a href="academicLawWriting.html">Academic Law Writing</a>
-                  <a href="artsHumanities.html">Arts & Humanities</a>
+                  <a href="#">Academic Law Writing</a>
+                  <a href="#">Arts & Humanities</a>
                   <a href="#">Medicine & Healthcare</a>
                   <a href="#">Business & Management</a>
                   <a href="#">Economics & Finance Academic</a>
@@ -52,7 +101,6 @@
               <li><a href="helpGuide.html">Help-Guide</a></li>
               <li><a href="contactUs.html">Contact Us</a></li>
               <li><a href="hiring.html">Hire a Research Assistant</a></li>
-              <li><a href="faq.html">FAQ</a></li>
             </ul>
           </nav>
           <div class="search-bar">
@@ -63,7 +111,70 @@
           </div>
         </div>
     </header>
-    
+
+    <section class="cards-section">
+      <div class="card">
+        <i class='bx bx-globe'></i>
+          <h3>BIOMEDICAL ENGINEERING</h3>
+          <p>Biomedical Engineering advances human health by integrating medicine, engineering, and biology through multidisciplinary activities.</p>
+      </div>
+      <div class="card">
+        <i class='bx bxs-briefcase'></i>
+          <h3>ENVIRONMENTAL ENGINEERING</h3>
+          <p>The course is designed to enable Engineer and other technical experts to take a lead role as the environmental engineering and management.</p>
+      </div>
+      <div class="card">
+        <i class='bx bx-sitemap'></i>
+          <h3>CIVIL & STRUCTURAL ENGINEERING</h3>
+          <p>Civil and structural engineering course offers students the opportunity to prepare for the today’s working professional to achieve academic goals.</p>
+      </div>
+      <div class="card">
+        <i class='bx bxs-flask'></i>
+          <h3>CHEMICAL ENGINEERING</h3>
+          <p>Chemical engineering focuses on designing and managing plants for manufacturing chemical products and developing new production methods.</p>
+      </div>
+      <div class="card">
+        <i class="bx bx-cog"></i>
+          <h3>MANUFACTURING & MATERIALS SCIENCE</h3>
+          <p>The Manufacturing & Materials Science programs deal with a broad range of topics mainly related to Materials Science and Engineering. </p>
+      </div>
+      <div class="card">
+        <i class='bx bxs-droplet-half'></i>
+          <h3>NANOTECHNOLOGY</h3>
+          <p>The aim of the program is intended to prepare a student to get expertise in the theoretical and experimental study of the Nanotechnology.</p>
+      </div>
+      <div class="card">
+        <i class="bx bx-cog icon"></i>
+          <h3>MECHANICAL ENGINEERING</h3>
+          <p>The mechanical engineering program offers career opportunities in simulation, design, manufacturing, testing, and related fields.</p>
+      </div>
+      <div class="card">
+        <i class="bx bx-code icon"></i>
+          <h3>SOFTWARE ENGINEERING</h3>
+          <p>The software engineering program teaches both software skills and management, system engineering, and customer collaboration.</p>
+      </div>
+      <div class="card">
+        <i class="bx bx-phone icon"></i>
+          <h3>TELECOMMUNICATIONS</h3>
+          <p>The program educates students in telecommunications, focusing on computer science, engineering technology, and electronics.</p>
+      </div>
+      <div class="card">
+        <i class="bx bx-wifi icon"></i>
+          <h3>ELECTRICAL & ELECTRONIC</h3>
+          <p>The course covers electronic design, communication, software engineering, and electrical machines.</p>
+      </div>
+      <div class="card">
+        <i class='bx bx-cloud-download'></i>
+          <h3>DATA MINING/IMAGE MINING/CLOUD COMPUTING</h3>
+          <p>Data mining extracts patterns from large datasets using techniques from statistics, artificial intelligence, and database management.</p>
+      </div>
+      <div class="card">
+        <i class='bx bx-code-block'></i>
+          <h3>COMPUTER SCIENCE ENGINEERING</h3>
+          <p>The Computer Science Engineering program expands knowledge in cutting-edge computing through advanced modules.</p>
+      </div>
+  </section>
+
     <footer class="footer">
         <div class="footer-container">
           <div class="footer-column">
