@@ -101,7 +101,7 @@ body {
   header {
     background-color: #000000; /* Black background */
     color: white; /* Assuming white text for contrast */
-    padding: 10px 20px; 
+    /* padding: 10px 20px;  */
     display: flex;
     justify-content: center; /* Center the content */
     align-items: center;
@@ -125,8 +125,14 @@ body {
   
   /* Style for the logo */
   header img {
-    width: 150px; /* Adjust width as needed */
+    width: 90px; /* Adjust width as needed */
   }
+
+  #menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
   
   /* Navigation styles */
   header nav ul {
@@ -143,6 +149,7 @@ body {
   
   header nav a {
     text-decoration: none; /* Remove underlines */
+    font-size: large;
     color: inherit; /* Inherit white color from header */
     padding: 5px 10px; /* Add padding for clickable area */
     transition: color 0.3s, background-color 0.3s;
@@ -1748,5 +1755,114 @@ body {
     text-align: center; /* Align text to the left */
   }
 
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column; /* Stack columns vertically on smaller screens */
+      align-items: center; /* Center items horizontally */
+  }
+
+  .footer-column, .subscription-form {
+      margin: 20px 0; /* Margin adjustment for stacked layout */
+      text-align: center; /* Center text for better readability */
+  }
+
+  .footer-column p {
+      font-size: 12px; /* Smaller font size for better fit */
+  }
+
+  .footer-column h3 {
+      font-size: 18px; /* Adjust heading size */
+  }
+  
+  .subscription-form h2 {
+      font-size: 20px; /* Adjust heading size */
+  }
+  
+  .subscription-form p {
+      font-size: 14px; /* Adjust font size */
+  }
+  
+  #email-form input[type="email"] {
+      font-size: 14px; /* Adjust font size */
+  }
+  
+  #email-form button {
+      font-size: 14px; /* Adjust font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-column p, .footer-column a {
+      font-size: 12px; /* Smaller font size for very small screens */
+  }
+
+  .footer-column h3 {
+      font-size: 16px; /* Adjust heading size */
+  }
+
+  .subscription-form h2 {
+      font-size: 18px; /* Adjust heading size */
+  }
+
+  .subscription-form p {
+      font-size: 12px; /* Adjust font size */
+  }
+}
 
 
+@media (max-width: 768px) {
+  #menu-icon {
+      display: block;
+  }
+
+  .search-bar{
+    display: none;
+  }
+
+  .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: #000000; /* Update this to match your header background */
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column; /* Add this to ensure vertical alignment */
+    align-items: flex-start; 
+  }
+
+  .navbar.active {
+      display: flex;
+  }
+
+  .navbar ul {
+    flex-direction: column; /* Ensure ul is also in column direction */
+    width: 100%; /* Make sure it takes full width */
+  }
+
+  .navbar li {
+    width: 100%; /* Ensure li takes full width */
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 1rem 0; /* Adjust margin for better spacing */
+    width: 100%; /* Ensure a takes full width */
+    text-align: left; /* Align text to the left */
+  }
+
+  .dropdown-content {
+    position: static; /* Change position to static */
+    background: #333; /* Background color for dropdown */
+    box-shadow: none; /* Remove box shadow */
+    width: 100%; /* Ensure it takes full width */
+  }
+
+  .dropdown-content a {
+    padding: 1rem 2rem; /* Adjust padding for dropdown items */
+    background: #000000; /* Match background color */
+  }
+}
