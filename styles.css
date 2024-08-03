@@ -1810,6 +1810,61 @@ body {
   }
 }
 
+@media (max-width: 1028px) {
+  #menu-icon {
+      display: block;
+  }
+
+  .search-bar{
+    display: none;
+  }
+
+  .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: #000000; /* Update this to match your header background */
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column; /* Add this to ensure vertical alignment */
+    align-items: flex-start; 
+  }
+
+  .navbar.active {
+      display: flex;
+  }
+
+  .navbar ul {
+    flex-direction: column; /* Ensure ul is also in column direction */
+    width: 100%; /* Make sure it takes full width */
+  }
+
+  .navbar li {
+    width: 100%; /* Ensure li takes full width */
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 1rem 0; /* Adjust margin for better spacing */
+    width: 100%; /* Ensure a takes full width */
+    text-align: left; /* Align text to the left */
+  }
+
+  .dropdown-content {
+    position: static; /* Change position to static */
+    background: #333; /* Background color for dropdown */
+    box-shadow: none; /* Remove box shadow */
+    width: 100%; /* Ensure it takes full width */
+  }
+
+  .dropdown-content a {
+    padding: 1rem 2rem; /* Adjust padding for dropdown items */
+    background: #000000; /* Match background color */
+  }
+}
 
 @media (max-width: 768px) {
   #menu-icon {
